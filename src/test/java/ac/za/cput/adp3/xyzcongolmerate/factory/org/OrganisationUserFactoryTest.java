@@ -1,5 +1,7 @@
 package ac.za.cput.adp3.xyzcongolmerate.factory.org;
 
+import ac.za.cput.adp3.xyzcongolmerate.domain.org.OrganisationUser;
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -9,7 +11,12 @@ public class OrganisationUserFactoryTest {
     //TODO: implement method body ONLY!
     @Test
     public void buildOrganisationUser() {
-        throw new UnsupportedOperationException("Not supported yet.");
+
+        OrganisationUser ou=OrganisationUserFactory.buildOrganisationUser("Clope","cyfotyasi@gmail.com");
+        System.out.println(ou);
+        Assert.assertNotNull(ou);
+
+
         /**
          * Your implementation goes here
          *

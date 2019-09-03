@@ -5,7 +5,9 @@ import java.util.UUID;
 public class Helper {
 
     public static String generateRandomGivenSuffix(String suffix) {
+        System.out.println(suffix);
         return suffix + "-" + UUID.randomUUID().toString();
+
     }
 
     public static String getClassName(Class<?>  aClass) {
@@ -14,7 +16,21 @@ public class Helper {
 
     public static String getSuffixFromClassName(Class<?> aClass) {
         String className = getClassName(aClass);
-        throw new UnsupportedOperationException("Not yet supported!");
+
+        System.out.println("class"+className);
+
+        String newClassName ="";
+
+        for(int n=0; n<className.length(); n++){
+            char newName=className.charAt(n);
+            if(Character.isUpperCase(newName))
+            {
+                newClassName +=newName;
+            }
+        }
+
+        return newClassName;
+      //  throw new UnsupportedOperationException("Not yet supported!");
         /**
          * Your implementation goes here
          *
