@@ -10,10 +10,10 @@ public class GenderFactory {
 
 
     public static Gender buildGender(String genderDescription) {
-        System.out.println(SUFFIX);
+
         return new Gender.Builder()
-                            .genderId(SUFFIX)
-                            .genderDescription("Male")
+                            .genderId(Helper.generateRandomGivenSuffix(SUFFIX))
+                            .genderDescription(genderDescription)
                             .build();
 
 

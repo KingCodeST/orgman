@@ -8,9 +8,9 @@ public class UserFactory {
     public static User buildUser(String userEmail, String firstName, String lastName) {
 
         return new User.Builder()
-                        .userEmail("cyfotyasi@gmail.com")
-                        .lastName("Siphokuhle")
-                        .firstName("tyasi")
+                        .userEmail(userEmail)
+                        .lastName(firstName)
+                        .firstName(lastName)
                         .build();
 
         /**

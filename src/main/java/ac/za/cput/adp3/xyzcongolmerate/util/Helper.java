@@ -5,7 +5,7 @@ import java.util.UUID;
 public class Helper {
 
     public static String generateRandomGivenSuffix(String suffix) {
-        System.out.println(suffix);
+
         return suffix + "-" + UUID.randomUUID().toString();
 
     }
@@ -28,7 +28,7 @@ public class Helper {
                 newClassName +=newName;
             }
         }
-
+//
         return newClassName;
       //  throw new UnsupportedOperationException("Not yet supported!");
         /**

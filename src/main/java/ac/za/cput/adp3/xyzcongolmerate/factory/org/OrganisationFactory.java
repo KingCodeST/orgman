@@ -11,8 +11,8 @@ public class OrganisationFactory {
     public static Organisation buildOrganisation(String organisationName) {
 
         return new Organisation.Builder()
-                                .orgCode(SUFFIX)
-                                .orgName("Plane")
+                                .orgCode(Helper.generateRandomGivenSuffix(SUFFIX))
+                                .orgName(organisationName)
                                 .build();
 
 
